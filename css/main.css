@@ -117,19 +117,28 @@ body {
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: ghostwhite;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
+  background-color: dimgray;
   height: 300px;
+    opacity: 90%;
     display: flex;
     width: 30%;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    border-radius: 10px;
 }
 
+.wrapper a {
+    text-decoration: none;
+    color: ghostwhite;
+}
 
-
+.wrapper a:hover {
+    color: yellow;
+}
 
 /* ==========================================================================
    Helper classes
