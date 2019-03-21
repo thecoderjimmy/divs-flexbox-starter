@@ -97,8 +97,9 @@ textarea {
 
 
 html {
-  background-color: #fff;
   height: 100%;
+    background: url(../img/bkgd.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 body {
@@ -108,23 +109,55 @@ body {
   height: 100%;
 }
 
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; /*!!!makes divs stack on top of each other!!!*/
     justify-content: space-between;
+    opacity: .9;
 }
 
-.div-1, .div-2, .div-3 {
+header, main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+header {
+    background-color: ghostwhite;
+}
+
+header h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: 'Lora', serif;
+}
+
+main {
+    background-color: dimgray;
+}
+
+main h2 {
+    font-size: 2em;
+    color: white;
+}
+
+.div-1, .div-2, .div-3, .div-4 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: ghostwhite;
   line-height: 1.5em;
   font-size: 1.6em;
   background-color: dimgray;
-  height: 300px;
-    opacity: 90%;
+  height: 200px;
     display: flex;
-    width: 30%;
+    width: 24.5%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -138,6 +171,17 @@ body {
 
 .wrapper a:hover {
     color: yellow;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: .85;
+    margin: 4px;
 }
 
 /* ==========================================================================
